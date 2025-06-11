@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品 - 作品集</title>
+    <link rel="stylesheet" href="style.css">
+  <script type="module" crossorigin src="./assets/utils-sW9C0HAv.js"></script>
+  <script type="module" crossorigin src="./assets/main-TM09_kV_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/globals-DOWDqymX.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">作品集</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="explore.html">探索</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="works-grid">
+            <div class="work-item">
+                <div id="luoding-card-container"></div>
+            </div>
+            <div class="work-item">
+                <div id="xihu-card-container"></div>
+            </div>
+            <div class="work-item">
+                <div id="unity-card-container"></div>
+            </div>
+            <div class="work-item">
+                <div id="desert-scene-container"></div>
+            </div>
+            <div class="work-item">
+                <div id="forest-cabin-container"></div>
+            </div>
+        </section>
+
+        <section class="practice-works">
+            <h2 class="section-title">练习作品</h2>
+            <div class="works-grid">
+                <div class="work-item">
+                    <div id="practice1-card-container"></div>
+                </div>
+                <div class="work-item">
+                    <div id="practice2-card-container"></div>
+                </div>
+                <div class="work-item">
+                    <div id="practice3-card-container"></div>
+                </div>
+                <div class="work-item">
+                    <div id="practice4-card-container"></div>
+                </div>
+                <div class="work-item">
+                    <div id="practice5-card-container"></div>
+                </div>
+                <div class="work-item">
+                    <div id="practice6-card-container"></div>
+                </div>
+                <div class="work-item">
+                    <div id="practice7-card-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <div id="projectDetail" class="project-detail">
+            <div class="detail-content">
+                <button class="close-btn" onclick="closeProjectDetail()">×</button>
+                
+                <div id="luoding" class="project-info">
+                    <div class="project-header">
+                        <h2>落鼎</h2>
+                        <p class="project-subtitle">一款中国风的水墨RTS游戏</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/project1/main.png" alt="落鼎主图">
+                        <div class="gallery-thumbs">
+                            <img src="works/project1/thumb1.png" alt="缩略图1">
+                            <img src="works/project1/thumb2.png" alt="缩略图2">
+                            <img src="works/project1/thumb3.png" alt="缩略图3">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>落鼎是一款以中国传统文化为背景的即时战略游戏。游戏采用水墨画风格，将传统艺术与现代游戏玩法完美结合。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>使用UE5引擎开发</li>
+                            <li>水墨渲染系统</li>
+                            <li>AI寻路算法</li>
+                        </ul>
+                        <h3>我的职责</h3>
+                        <p>作为核心开发者，负责游戏核心系统的设计与实现，包括：</p>
+                        <ul>
+                            <li>游戏抽卡系统</li>
+                            <li>AI寻路系统实现</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="xihu" class="project-info">
+                    <div class="project-header">
+                        <h2>西湖龙井茶</h2>
+                        <p class="project-subtitle">茶叶品牌设计</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/project2/main.png" alt="西湖龙井茶主图">
+                        <div class="gallery-thumbs">
+                            <img src="works/project2/thumb1.png" alt="缩略图1">
+                            <img src="works/project2/thumb2.png" alt="缩略图2">
+                            <img src="works/project2/thumb3.png" alt="缩略图3">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>为西湖龙井茶品牌进行整体视觉设计，包括品牌标识、包装设计、宣传物料等，突出茶叶的品质和中国传统文化特色。</p>
+                        <h3>设计内容</h3>
+                        <ul>
+                            <li>品牌标识设计</li>
+                            <li>茶叶包装设计</li>
+                            <li>宣传海报设计</li>
+                            <li>品牌视觉规范</li>
+                        </ul>
+                        <h3>我的职责</h3>
+                        <p>作为品牌设计师，负责整体视觉设计，包括：</p>
+                        <ul>
+                            <li>品牌视觉识别系统设计</li>
+                            <li>包装结构及视觉设计</li>
+                            <li>宣传物料设计</li>
+                            <li>设计规范制定</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="unity" class="project-info">
+                    <div class="project-header">
+                        <h2>Unity简单游戏制作</h2>
+                        <p class="project-subtitle">游戏开发练习项目集</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/project3/main.png" alt="Unity游戏主图">
+                        <div class="gallery-thumbs">
+                            <img src="works/project3/thumb1.png" alt="2D平台跳跃游戏">
+                            <img src="works/project3/thumb2.png" alt="3D近战游戏">
+                            <img src="works/project3/thumb3.png" alt="FPS游戏">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>使用Unity引擎开发的三个不同类型的游戏项目，包括2D平台跳跃游戏、3D近战游戏和FPS游戏，涵盖了不同游戏类型的开发技术。</p>
+                        
+                        <h3>项目内容</h3>
+                        <ul>
+                            <li>2D平台跳跃游戏
+                                <ul>
+                                    <li>基础移动和跳跃机制</li>
+                                    <li>关卡设计和障碍物</li>
+                                    <li>收集系统和计分</li>
+                                </ul>
+                            </li>
+                            <li>3D近战游戏
+                                <ul>
+                                    <li>角色动画系统</li>
+                                    <li>战斗机制实现</li>
+                                    <li>敌人AI行为</li>
+                                </ul>
+                            </li>
+                            <li>FPS游戏
+                                <ul>
+                                    <li>第一人称视角控制</li>
+                                    <li>武器系统设计</li>
+                                    <li>射击和伤害机制</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>Unity 2D/3D游戏开发</li>
+                            <li>物理系统应用</li>
+                            <li>动画状态机</li>
+                            <li>AI行为树</li>
+                            <li>UI系统设计</li>
+                        </ul>
+
+                        <h3>我的职责</h3>
+                        <p>作为游戏开发者，负责各个项目的核心功能实现，包括：</p>
+                        <ul>
+                            <li>游戏核心机制开发</li>
+                            <li>角色控制系统</li>
+                            <li>关卡设计</li>
+                            <li>游戏UI设计</li>
+                            <li>音效系统</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 3D组件详情 -->
+                <div id="desert-scene" class="project-info">
+                    <div class="project-header">
+                        <h2>沙漠场景</h2>
+                        <p class="project-subtitle">基于Three.js的交互式沙漠环境</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/3d/desert-scene.png" alt="沙漠场景主图">
+                        <!-- 可以在这里嵌入Three.js渲染的iframe或者其他互动内容 -->
+                        <p>（此处将是Three.js渲染的交互式沙漠场景）</p>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>这是一个使用Three.js创建的交互式沙漠场景，旨在探索Web 3D技术在环境渲染中的应用。场景包含了地形、光照、粒子效果等元素，用户可以自由视角浏览。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>Three.js</li>
+                            <li>Web渲染优化</li>
+                            <li>交互式控制</li>
+                            <li>粒子系统</li>
+                        </ul>
+                        <h3>我的职责</h3>
+                        <p>作为独立开发者，负责整个场景的建模、纹理、光照设置以及Three.js代码实现，包括场景初始化、相机控制、动画逻辑和性能优化。</p>
+                    </div>
+                </div>
+
+                <div id="forest-cabin" class="project-info">
+                    <div class="project-header">
+                        <h2>林中小屋</h2>
+                        <p class="project-subtitle">使用Blender制作的3D小屋场景</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="./assets/main-B4c3rBhK.png" alt="林中小屋主图">
+                        <video controls class="project-video">
+                            <source src="./assets/demo-DB-lG2tI.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>这是一个使用Blender制作的林中小屋场景，旨在展示3D建模和渲染的技能。场景细节丰富，包括木屋、植被、光影效果等，营造出宁静的氛围。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>Blender建模</li>
+                            <li>材质与纹理</li>
+                            <li>场景布局</li>
+                            <li>灯光渲染</li>
+                        </ul>
+                        <h3>我的职责</h3>
+                        <p>作为3D艺术家，负责小屋及周边环境的建模、贴图、材质赋予、灯光设置以及最终的渲染输出。旨在通过细致的场景构建展示对细节的把控。</p>
+                    </div>
+                </div>
+                <div id="practice1" class="project-info">
+                    <div class="project-header">
+                        <h2>像素风格游戏</h2>
+                        <p class="project-subtitle">使用Unity开发的2D像素风格游戏</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice1/main.png" alt="像素风格游戏主图">
+                        <video controls class="project-video">
+                            <source src="works/practice1/demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>这是一个使用Unity开发的2D像素风格游戏，展示了基础的平台跳跃和收集机制。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>Unity 2D开发</li>
+                            <li>像素风格美术</li>
+                            <li>基础游戏机制</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="practice2" class="project-info">
+                    <div class="project-header">
+                        <h2>UI设计练习</h2>
+                        <p class="project-subtitle">移动应用界面设计作品集</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice2/main.png" alt="UI设计练习主图">
+                        <video controls class="project-video">
+                            <source src="works/practice2/demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>这是一系列移动应用界面设计练习，包括登录界面、主页和设置页面等。</p>
+                        <h3>设计内容</h3>
+                        <ul>
+                            <li>登录界面设计</li>
+                            <li>主页布局</li>
+                            <li>设置页面</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="practice3" class="project-info">
+                    <div class="project-header">
+                        <h2>3D建模作品</h2>
+                        <p class="project-subtitle">Blender建模练习作品集</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice3/main.png" alt="3D建模作品主图">
+                        <video controls class="project-video">
+                            <source src="works/practice3/demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>使用Blender进行的一系列3D建模练习，包括角色、场景和道具建模。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>Blender建模</li>
+                            <li>材质贴图</li>
+                            <li>灯光渲染</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="practice4" class="project-info">
+                    <div class="project-header">
+                        <h2>动画制作</h2>
+                        <p class="project-subtitle">2D动画制作练习</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice4/main.png" alt="动画制作主图">
+                        <video controls class="project-video">
+                            <source src="works/practice4/demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>使用After Effects制作的2D动画练习，包括角色动画和场景动画。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>After Effects动画</li>
+                            <li>角色动画</li>
+                            <li>场景动画</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="practice5" class="project-info">
+                    <div class="project-header">
+                        <h2>游戏特效</h2>
+                        <p class="project-subtitle">Unity特效制作练习</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice5/main.png" alt="游戏特效主图">
+                        <video controls class="project-video">
+                            <source src="works/practice5/demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>使用Unity粒子系统制作的游戏特效练习，包括技能特效和环境特效。</p>
+                        <h3>技术特点</h3>
+                        <ul>
+                            <li>Unity粒子系统</li>
+                            <li>技能特效</li>
+                            <li>环境特效</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="practice6" class="project-info">
+                    <div class="project-header">
+                        <h2>插画作品</h2>
+                        <p class="project-subtitle">数字插画练习集</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice6/main.png" alt="插画作品主图">
+                        <div class="gallery-thumbs">
+                            <img src="works/practice6/thumb1.png" alt="插画作品1">
+                            <img src="works/practice6/thumb2.png" alt="插画作品2">
+                            <img src="works/practice6/thumb3.png" alt="插画作品3">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>使用Photoshop和Procreate创作的一系列数字插画作品。</p>
+                        <h3>作品内容</h3>
+                        <ul>
+                            <li>角色设计</li>
+                            <li>场景插画</li>
+                            <li>概念设计</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="practice7" class="project-info">
+                    <div class="project-header">
+                        <h2>UI动效</h2>
+                        <p class="project-subtitle">界面动效设计集</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="works/practice7/main.png" alt="UI动效主图">
+                        <div class="gallery-thumbs">
+                            <img src="works/practice7/thumb1.png" alt="动效设计1">
+                            <img src="works/practice7/thumb2.png" alt="动效设计2">
+                            <img src="works/practice7/thumb3.png" alt="动效设计3">
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>项目介绍</h3>
+                        <p>使用After Effects和Figma制作的UI动效设计练习。</p>
+                        <h3>设计内容</h3>
+                        <ul>
+                            <li>交互动效</li>
+                            <li>过渡动画</li>
+                            <li>微交互</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 He Juno. 保留所有权利</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
