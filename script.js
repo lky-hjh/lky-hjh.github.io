@@ -191,17 +191,22 @@ function closeProjectDetail() {
 }
 
 // 点击详情页外部区域关闭
-document.getElementById('projectDetail').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeProjectDetail();
-    }
-});
+const projectDetailElement = document.getElementById('projectDetail');
+if (projectDetailElement) {
+    projectDetailElement.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeProjectDetail();
+        }
+    });
+}
 
 // 缩略图点击切换主图
 document.querySelectorAll('.gallery-thumbs img').forEach(thumb => {
     thumb.addEventListener('click', function() {
-        const mainImg = this.closest('.project-gallery').querySelector('img');
-        mainImg.src = this.src;
-        mainImg.alt = this.alt;
+        const mainImg = this.closest('.project-gallery')?.querySelector('img');
+        if (mainImg) {
+            mainImg.src = this.src;
+            mainImg.alt = this.alt;
+        }
     });
 }); 

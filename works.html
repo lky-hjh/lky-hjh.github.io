@@ -7,16 +7,78 @@
     <link rel="stylesheet" href="./assets/globals-DOWDqymX.css">
     <script type="module" crossorigin src="./assets/utils-sW9C0HAv.js"></script>
     <script type="module" crossorigin src="./assets/main-TM09_kV_.js"></script>
+    <style>
+    .video-placeholder {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-play-btn {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 32px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+        pointer-events: auto;
+    }
+
+    .video-play-btn:hover {
+        background: rgba(0, 0, 0, 0.9);
+        transform: scale(1.1);
+    }
+
+    .video-placeholder.loading .video-play-btn {
+        display: none;
+    }
+
+    .video-placeholder.loading::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgba(255, 255, 255, 0.3);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 10;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .video-placeholder video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    </style>
 </head>
 <body>
     <nav>
         <div class="nav-content">
-            <div class="logo">作品集</div>
+            <div class="logo">Mcdull</div>
             <ul class="nav-links">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="works.html">作品</a></li>
                 <li><a href="explore.html">探索</a></li>
-                <li><a href="about.html">关于</a></li>
+                <li><a href="index.html#about">关于</a></li>
             </ul>
         </div>
     </nav>
@@ -83,12 +145,15 @@
                             <img src="works/project1/thumb2.png" alt="缩略图2">
                             <img src="works/project1/thumb3.png" alt="缩略图3">
                         </div>
-                        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114692622125913&bvid=BV1QVMizZERM&cid=30528113631&p=1" 
+                        <iframe 
+                            src="//player.bilibili.com/player.html?isOutside=true&aid=114692622125913&bvid=BV1QVMizZERM&cid=30528113631&p=1&autoplay=0" 
                             scrolling="no" 
                             border="0" 
                             frameborder="no" 
                             framespacing="0" 
                             allowfullscreen="true"
+                            loading="lazy"
+                            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
                             style="width: 100%; height: 700px; margin-top: 20px;">
                         </iframe>
                     </div>
@@ -239,22 +304,25 @@
                 <div id="forest-cabin" class="project-info">
                     <div class="project-header">
                         <h2>林中小屋</h2>
-                        <p class="project-subtitle">使用ue5制作的场景</p>
+                        <p class="project-subtitle">使用 ue5 制作的场景</p>
                     </div>
                     <div class="project-gallery">
-                        <img src="works\project4\main.png" alt="林中小屋主图">
-                        <video controls class="project-video">
-                            <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project4/cabinInWoods.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
+                        <img src="works/project4/main.png" alt="林中小屋主图">
+                        <div class="video-placeholder" data-video-src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project4/cabinInWoods.mp4">
+                            <div class="video-play-btn">▶</div>
+                            <video controls class="project-video" preload="none" style="display: none;">
+                                <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project4/cabinInWoods.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
-                        <p>这是一个使用ue5制作的林中小屋场景</p>
+                        <p>这是一个使用 ue5 制作的林中小屋场景</p>
                         <h3>技术特点</h3>
                         <ul>
                             <li>随机生成地形</li>
-                            <li>Nanite植被</li>
+                            <li>Nanite 植被</li>
                             <li>水体系统</li>
                         </ul>
                     </div>
@@ -262,22 +330,24 @@
                 <div id="practice1" class="project-info">
                     <div class="project-header">
                         <h2>子弹冲击</h2>
-                        <p class="project-subtitle">使用blender制作的动画</p>
+                        <p class="project-subtitle">使用 blender 制作的动画</p>
                     </div>
                     <div class="project-gallery">
                         <img src="works/practice1/main.png" alt="动画主图">
-                        <video controls class="project-video">
-                            <source src="
-                            https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice1/bulletImpact.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
+                        <div class="video-placeholder" data-video-src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice1/bulletImpact.mp4">
+                            <div class="video-play-btn">▶</div>
+                            <video controls class="project-video" preload="none" style="display: none;">
+                                <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice1/bulletImpact.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
-                        <p>这是一个使用Unity开发的2D像素风格游戏，展示了基础的平台跳跃和收集机制。</p>
+                        <p>这是一个使用 Unity 开发的 2D 像素风格游戏，展示了基础的平台跳跃和收集机制。</p>
                         <h3>技术特点</h3>
                         <ul>
-                            <li>Unity 2D开发</li>
+                            <li>Unity 2D 开发</li>
                             <li>像素风格美术</li>
                             <li>基础游戏机制</li>
                         </ul>
@@ -286,16 +356,18 @@
 
                 <div id="practice2" class="project-info">
                     <div class="project-header">
-                        <h2>UI设计练习</h2>
+                        <h2>UI 设计练习</h2>
                         <p class="project-subtitle">移动应用界面设计作品集</p>
                     </div>
                     <div class="project-gallery">
-                        <img src="works/practice2/main.png" alt="UI设计练习主图">
-                        <video controls class="project-video">
-                            <source src="
-                            https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice2/monkeyHead.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
+                        <img src="works/practice2/main.png" alt="UI 设计练习主图">
+                        <div class="video-placeholder" data-video-src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice2/monkeyHead.mp4">
+                            <div class="video-play-btn">▶</div>
+                            <video controls class="project-video" preload="none" style="display: none;">
+                                <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice2/monkeyHead.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
@@ -311,22 +383,25 @@
 
                 <div id="practice3" class="project-info">
                     <div class="project-header">
-                        <h2>3D建模作品</h2>
-                        <p class="project-subtitle">Blender建模练习作品集</p>
+                        <h2>3D 建模作品</h2>
+                        <p class="project-subtitle">Blender 建模练习作品集</p>
                     </div>
                     <div class="project-gallery">
-                        <img src="works/practice3/main.png" alt="3D建模作品主图">
-                        <video controls class="project-video">
-                            <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice3/bricksAnimation.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
+                        <img src="works/practice3/main.png" alt="3D 建模作品主图">
+                        <div class="video-placeholder" data-video-src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice3/bricksAnimation.mp4">
+                            <div class="video-play-btn">▶</div>
+                            <video controls class="project-video" preload="none" style="display: none;">
+                                <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice3/bricksAnimation.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
-                        <p>使用Blender进行的一系列3D建模练习，包括角色、场景和道具建模。</p>
+                        <p>使用 Blender 进行的一系列 3D 建模练习，包括角色、场景和道具建模。</p>
                         <h3>技术特点</h3>
                         <ul>
-                            <li>Blender建模</li>
+                            <li>Blender 建模</li>
                             <li>材质贴图</li>
                             <li>灯光渲染</li>
                         </ul>
@@ -336,21 +411,24 @@
                 <div id="practice4" class="project-info">
                     <div class="project-header">
                         <h2>动画制作</h2>
-                        <p class="project-subtitle">2D动画制作练习</p>
+                        <p class="project-subtitle">2D 动画制作练习</p>
                     </div>
                     <div class="project-gallery">
                         <img src="works/practice4/main.png" alt="动画制作主图">
-                        <video controls class="project-video">
-                            <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice4/littleCar.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
+                        <div class="video-placeholder" data-video-src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice4/littleCar.mp4">
+                            <div class="video-play-btn">▶</div>
+                            <video controls class="project-video" preload="none" style="display: none;">
+                                <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice4/littleCar.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
-                        <p>使用After Effects制作的2D动画练习，包括角色动画和场景动画。</p>
+                        <p>使用 After Effects 制作的 2D 动画练习，包括角色动画和场景动画。</p>
                         <h3>技术特点</h3>
                         <ul>
-                            <li>After Effects动画</li>
+                            <li>After Effects 动画</li>
                             <li>角色动画</li>
                             <li>场景动画</li>
                         </ul>
@@ -360,22 +438,24 @@
                 <div id="practice5" class="project-info">
                     <div class="project-header">
                         <h2>游戏特效</h2>
-                        <p class="project-subtitle">Unity特效制作练习</p>
+                        <p class="project-subtitle">Unity 特效制作练习</p>
                     </div>
                     <div class="project-gallery">
                         <img src="works/practice5/main.png" alt="游戏特效主图">
-                        <video controls class="project-video">
-                            <source src="
-                            https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice5/robotWalk.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
+                        <div class="video-placeholder" data-video-src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice5/robotWalk.mp4">
+                            <div class="video-play-btn">▶</div>
+                            <video controls class="project-video" preload="none" style="display: none;">
+                                <source src="https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice5/robotWalk.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
-                        <p>使用Unity粒子系统制作的游戏特效练习，包括技能特效和环境特效。</p>
+                        <p>使用 Unity 粒子系统制作的游戏特效练习，包括技能特效和环境特效。</p>
                         <h3>技术特点</h3>
                         <ul>
-                            <li>Unity粒子系统</li>
+                            <li>Unity 粒子系统</li>
                             <li>技能特效</li>
                             <li>环境特效</li>
                         </ul>
@@ -392,7 +472,7 @@
                     </div>
                     <div class="project-description">
                         <h3>项目介绍</h3>
-                        <p>使用Photoshop和Procreate创作的一系列数字插画作品。</p>
+                        <p>使用 Photoshop 和 Procreate 创作的一系列数字插画作品。</p>
                         <h3>作品内容</h3>
                         <ul>
                             <li>角色设计</li>
@@ -405,10 +485,10 @@
                 <div id="practice7" class="project-info">
                     <div class="project-header">
                         <h2>植物蜡烛</h2>
-                        <p class="project-subtitle">blender建模</p>
+                        <p class="project-subtitle">blender 建模</p>
                     </div>
                     <div class="project-gallery">
-                        <img src="works/practice7/main.png" alt="UI动效主图">
+                        <img src="works/practice7/main.png" alt="UI 动效主图">
                     </div>
                 </div>
             </div>
@@ -416,8 +496,35 @@
     </main>
 
     <footer>
-        <p>© 2025 He Juno. 保留所有权利</p>
+        <p>© 2025 Mcdull. 保留所有权利</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+    document.querySelectorAll('.video-placeholder').forEach(placeholder => {
+        const playBtn = placeholder.querySelector('.video-play-btn');
+        const video = placeholder.querySelector('video');
+        
+        if (playBtn && video) {
+            playBtn.addEventListener('click', function() {
+                placeholder.classList.add('loading');
+                
+                video.load();
+                video.style.display = 'block';
+                
+                video.addEventListener('canplay', function() {
+                    placeholder.classList.remove('loading');
+                    playBtn.style.display = 'none';
+                    video.play();
+                }, { once: true });
+                
+                video.addEventListener('error', function() {
+                    placeholder.classList.remove('loading');
+                    console.error('视频加载失败:', video.src);
+                    alert('视频加载失败，请稍后重试');
+                }, { once: true });
+            });
+        }
+    });
+    </script>
 </body>
 </html> 
