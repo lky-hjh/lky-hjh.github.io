@@ -60,13 +60,14 @@
       "videos": []
     },
     {
-      "id": "gamejam2025",
+      "id": "gamejam2025-removed",
       "title": "GameJam2025",
       "subtitle": "游戏开发马拉松",
       "folder": "project6",
       "description": "参与 GameJam2025 游戏开发马拉松。",
       "features": [],
-      "videos": []
+      "videos": [],
+      "_removed": true
     }
   ],
   "practices": [

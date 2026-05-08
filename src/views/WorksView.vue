@@ -71,8 +71,8 @@ import ImageGallery from '@/components/works/ImageGallery.vue'
 import VideoPlayer from '@/components/common/VideoPlayer.vue'
 import projectData from '@/data/projects.json'
 
-const projects = projectData.projects
-const practices = projectData.practices
+const projects = projectData.projects.filter(p => !p._removed)
+const practices = projectData.practices.filter(p => !p._removed)
 
 const showDetail = ref(false)
 const selectedProject = ref(null)
