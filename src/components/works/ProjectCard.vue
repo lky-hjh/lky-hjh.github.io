@@ -43,10 +43,11 @@ const imageSrc = computed(() => {
   width: 100%;
   aspect-ratio: 16 / 10;
   border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-card:hover {
@@ -65,7 +66,9 @@ const imageSrc = computed(() => {
   left: 0;
   right: 0;
   padding: 1.5rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1) 80%, transparent);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   color: white;
 }
 

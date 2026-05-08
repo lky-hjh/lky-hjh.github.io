@@ -41,16 +41,19 @@ const { transform } = useCard3D(cardRef)
 
 <style scoped>
 .blog-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   cursor: pointer;
   transition: box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .blog-card:hover {
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
 }
 
 .blog-card-cover {

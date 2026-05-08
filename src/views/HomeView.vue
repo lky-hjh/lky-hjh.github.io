@@ -89,9 +89,12 @@ const avatarUrl = `https://ui-avatars.com/api/?name=He+Juno&size=150&background=
 }
 
 .about-section {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin: 4rem auto;
   padding: 4rem 2rem;
   max-width: 1000px;

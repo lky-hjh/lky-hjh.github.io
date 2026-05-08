@@ -52,7 +52,9 @@ onUnmounted(() => {
 .project-detail {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +64,10 @@ onUnmounted(() => {
 }
 
 .detail-content {
-  background: white;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
   max-width: 900px;
   width: 100%;
