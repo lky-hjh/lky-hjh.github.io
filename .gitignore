@@ -1,48 +1,23 @@
-# 依赖目录
 node_modules/
-
-# 构建产物
 dist/
-build/
-assets/
-*.min.js
-*.min.css
+*.local
 
-# 编辑器/IDE 文件
-.vscode/
-.idea/
-.trae/
-*.swp
-*.swo
-*~
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
 .DS_Store
-
-# 操作系统临时文件
 Thumbs.db
-Desktop.ini
-.Spotlight-V100
-.Trashes
 
-# 日志文件
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# 临时文件
-*.tmp
-*.temp
-.cache/
-
-# 环境变量
-.env
-.env.local
-.env.*.local
-
-# 包管理器锁文件（如果需要）
-# package-lock.json
-# yarn.lock
-
-# 上传的临时文件
-*.bak
-*.orig
+# AI / Tool config
+.codebuddy/
+.workbuddy/
+.trae/
+.playwright-cli/

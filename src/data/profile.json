@@ -1,0 +1,105 @@
+{
+  "name": "Mcdull",
+  "role": "游戏制作/视觉设计",
+  "contact": {
+    "phone": "13824548404",
+    "email": "hjh21178734@outlook.com",
+    "wechat": "junhonghe2016",
+    "blog": "https://lky-hjh.github.io/"
+  },
+  "education": {
+    "school": "东莞理工学院",
+    "major": "计算机科学与技术（数媒设计方向）",
+    "period": "2023.09 – 至今",
+    "gpa": "前1%"
+  },
+  "skills": [
+    {
+      "category": "游戏引擎",
+      "description": "UE5 熟练运用各项功能，包括程序和美术相关操作；Unity 擅长运用C#脚本进行编程"
+    },
+    {
+      "category": "编程语言",
+      "description": "熟悉 C++、C#，数据结构与算法，具备良好的软件开发能力"
+    },
+    {
+      "category": "AI 设计",
+      "description": "熟练运用 GPT、Cursor 等，精通 Stable Diffusion AI 绘画，增强设计创新和效率"
+    },
+    {
+      "category": "GitHub",
+      "description": "能流畅地进行版本管理、项目合作和网站托管"
+    },
+    {
+      "category": "DCC",
+      "description": "精通 Blender、Zbrush、Substance Painter、Adobe Photoshop 等数字内容创作工具；掌握 Marvelous Designer、3ds Max"
+    },
+    {
+      "category": "网页设计",
+      "description": "熟悉 HTML5/CSS3 等前端基础技术，掌握 Vue.js 框架的组件化开发，熟练使用 Vite 工具"
+    },
+    {
+      "category": "视频后处理",
+      "description": "熟悉 Adobe After Effects 动效制作、Adobe Premiere 视频剪辑"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2023.10 – 至今",
+      "company": "校Lotto独立游戏工作室",
+      "role": "程序员",
+      "details": [
+        "参与制作了国风3D网格战棋游戏《秘密战争》，负责全部游戏客户端开发",
+        "核心玩法与网格逻辑：基于蓝图搭建 3D 棋盘网格与回合制状态机",
+        "数据驱动 UI：结合 Data Table 与高复用子控件，实现棋盘界面动态生成",
+        "多人网络同步：基于 Client-Server 架构实现联机对战",
+        "参与制作国风RTS策略游戏《笔墨山河》，负责 60% 核心程序功能",
+        "AI寻路系统：通过 FlowField + A* 实现大规模单位寻路",
+        "优化逻辑：通过 ECS 和对象池优化大规模单位逻辑",
+        "抽卡、资源系统：实现可自定义权重的概率性抽卡"
+      ]
+    },
+    {
+      "period": "2025.7 – 2025.9",
+      "company": "佛山海悦思网格科技有限公司",
+      "role": "实习生",
+      "details": [
+        "参与微信小程序页面制作和数据大屏前端制作",
+        "使用 Vue.js + Vite 开发"
+      ]
+    },
+    {
+      "period": "2024.7 – 2024.9",
+      "company": "广州智来文化咨询有限公司",
+      "role": "实习生",
+      "details": [
+        "参与裸眼3D动画项目，通过 PCG 进行大规模场景地形编辑与构建",
+        "使用 Landscape 搭建 10km² 开放世界地形",
+        "利用 Nanite 和 Lumen 优化场景，使用 Niagara 制作动态天气特效"
+      ]
+    },
+    {
+      "period": "2024.09 – 2025.06",
+      "company": "系协学生会",
+      "role": "宣传部部长",
+      "details": [
+        "运营系协公众号，指导团队制作海报、撰写推文、拍摄影片"
+      ]
+    },
+    {
+      "period": "2023",
+      "company": "院团委学生会",
+      "role": "宣传部摄影",
+      "details": [
+        "负责院系各项宣传活动的摄影与后期处理工作"
+      ]
+    }
+  ],
+  "awards": [
+    "2025中国大学生游戏设计大赛金辰奖最佳视觉效果奖",
+    "十五届蓝桥杯省赛二等奖（两次）",
+    "北美应用艺术设计大赛银奖",
+    "2024澳门国际创新发明展铜牌",
+    "2023~2024三等奖学金、院级评优奖项粤台之星"
+  ]
+}

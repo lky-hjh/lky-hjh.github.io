@@ -1,0 +1,130 @@
+{
+  "projects": [
+    {
+      "id": "secret-war",
+      "title": "秘密战争",
+      "subtitle": "中国风下棋游戏",
+      "folder": "project6",
+      "description": "秘密战争是一款国风 3D 网格战棋游戏，基于 UE5 蓝图开发。负责全部游戏客户端开发，包括核心玩法、网格逻辑、数据驱动 UI 和多人网络同步。",
+      "features": [
+        "基于蓝图的 3D 棋盘网格系统",
+        "回合制状态机与阵营交替控制",
+        "数据驱动 UI 系统",
+        "Client-Server 联机对战"
+      ],
+      "videos": []
+    },
+    {
+      "id": "luoding",
+      "title": "落鼎",
+      "subtitle": "一款中国风的水墨 RTS 游戏",
+      "folder": "project1",
+      "description": "国风 RTS 策略游戏，负责 60% 核心程序功能开发。",
+      "features": [
+        "FlowField + A* 寻路系统",
+        "ECS 架构优化大规模单位",
+        "抽卡、资源系统"
+      ],
+      "videos": [
+        {
+          "type": "bilibili",
+          "bvid": "BV1QVMizZERM"
+        }
+      ]
+    },
+    {
+      "id": "xihu",
+      "title": "西湖龙井茶",
+      "subtitle": "中国风游戏场景",
+      "folder": "project2",
+      "description": "中国风游戏场景设计与制作。",
+      "features": [],
+      "videos": []
+    },
+    {
+      "id": "unity-game",
+      "title": "Unity 游戏",
+      "subtitle": "沙漠场景",
+      "folder": "project3",
+      "description": "使用 Unity 开发的沙漠场景游戏项目。",
+      "features": [],
+      "videos": []
+    },
+    {
+      "id": "forest-house",
+      "title": "林中小屋",
+      "subtitle": "场景设计",
+      "folder": "project4",
+      "description": "林中小屋场景设计与渲染。",
+      "features": [],
+      "videos": []
+    },
+    {
+      "id": "gamejam2025",
+      "title": "GameJam2025",
+      "subtitle": "游戏开发马拉松",
+      "folder": "project6",
+      "description": "参与 GameJam2025 游戏开发马拉松。",
+      "features": [],
+      "videos": []
+    }
+  ],
+  "practices": [
+    {
+      "id": "practice1",
+      "title": "子弹冲击",
+      "subtitle": "使用 Blender 制作的动画",
+      "folder": "practice1",
+      "description": "使用 Blender 制作的子弹冲击动画效果。",
+      "videos": []
+    },
+    {
+      "id": "practice2",
+      "title": "练习2",
+      "subtitle": "",
+      "folder": "practice2",
+      "description": "",
+      "videos": []
+    },
+    {
+      "id": "practice3",
+      "title": "练习3",
+      "subtitle": "",
+      "folder": "practice3",
+      "description": "",
+      "videos": []
+    },
+    {
+      "id": "practice4",
+      "title": "练习4",
+      "subtitle": "",
+      "folder": "practice4",
+      "description": "",
+      "videos": []
+    },
+    {
+      "id": "practice5",
+      "title": "练习5",
+      "subtitle": "",
+      "folder": "practice5",
+      "description": "",
+      "videos": []
+    },
+    {
+      "id": "practice6",
+      "title": "练习6",
+      "subtitle": "",
+      "folder": "practice6",
+      "description": "",
+      "videos": []
+    },
+    {
+      "id": "practice7",
+      "title": "练习7",
+      "subtitle": "",
+      "folder": "practice7",
+      "description": "",
+      "videos": []
+    }
+  ]
+}

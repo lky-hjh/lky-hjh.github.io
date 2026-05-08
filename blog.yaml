@@ -1,0 +1,103 @@
+- generic [ref=e93]:
+  - navigation [ref=e94]:
+    - generic [ref=e95]:
+      - link "Mcdull" [ref=e96] [cursor=pointer]:
+        - /url: "#/"
+      - list [ref=e97]:
+        - listitem [ref=e98]:
+          - link "首页" [ref=e99] [cursor=pointer]:
+            - /url: "#/"
+        - listitem [ref=e100]:
+          - link "作品" [ref=e101] [cursor=pointer]:
+            - /url: "#/works"
+        - listitem [ref=e102]:
+          - link "博客" [ref=e103] [cursor=pointer]:
+            - /url: "#/blog"
+        - listitem [ref=e104]:
+          - link "关于" [ref=e105] [cursor=pointer]:
+            - /url: "#/about"
+  - main [ref=e106]:
+    - generic [ref=e107]:
+      - heading "博客" [level=1] [ref=e108]
+      - generic [ref=e109]:
+        - button "全部" [ref=e110] [cursor=pointer]
+        - button "游戏开发" [ref=e111] [cursor=pointer]
+        - button "教程" [ref=e112] [cursor=pointer]
+        - button "学习路径" [ref=e113] [cursor=pointer]
+        - button "UE5" [ref=e114] [cursor=pointer]
+        - button "C++" [ref=e115] [cursor=pointer]
+        - button "技术笔记" [ref=e116] [cursor=pointer]
+        - button "FPS" [ref=e117] [cursor=pointer]
+        - button "图形学" [ref=e118] [cursor=pointer]
+        - button "渲染" [ref=e119] [cursor=pointer]
+        - button "网络同步" [ref=e120] [cursor=pointer]
+        - button "性能优化" [ref=e121] [cursor=pointer]
+      - generic [ref=e122]:
+        - generic [ref=e123] [cursor=pointer]:
+          - generic [ref=e126]: 游戏
+          - generic [ref=e127]:
+            - heading "游戏客户端开发入门指南" [level=3] [ref=e128]
+            - paragraph [ref=e129]: 从技术栈、学习路径到求职要点，一份面向新手的游戏客户端开发完整指南。
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - generic [ref=e132]: 游戏开发
+                - generic [ref=e133]: 教程
+                - generic [ref=e134]: 学习路径
+              - generic [ref=e135]: 2026-05-01
+        - generic [ref=e136] [cursor=pointer]:
+          - generic [ref=e139]: UE
+          - generic [ref=e140]:
+            - heading "UE C++ 编程技巧总结" [level=3] [ref=e141]
+            - paragraph [ref=e142]: Unreal Engine C++ 命名规范、容器、智能指针与蓝图互调的实用技巧汇总。
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - generic [ref=e145]: UE5
+                - generic [ref=e146]: C++
+                - generic [ref=e147]: 技术笔记
+              - generic [ref=e148]: 2026-04-28
+        - generic [ref=e149] [cursor=pointer]:
+          - generic [ref=e152]: FP
+          - generic [ref=e153]:
+            - heading "FPS 游戏框架解析" [level=3] [ref=e154]
+            - paragraph [ref=e155]: 深入 FPS 游戏的 3C 系统、武器系统、网络同步与性能优化核心框架。
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]: 游戏开发
+                - generic [ref=e159]: FPS
+                - generic [ref=e160]: UE5
+              - generic [ref=e161]: 2026-04-25
+        - generic [ref=e162] [cursor=pointer]:
+          - generic [ref=e165]: 游戏
+          - generic [ref=e166]:
+            - heading "游戏图形渲染基础入门" [level=3] [ref=e167]
+            - paragraph [ref=e168]: 渲染管线、GPU 架构、前向/延迟渲染对比，游戏图形渲染的核心知识整理。
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]: 图形学
+                - generic [ref=e172]: 渲染
+                - generic [ref=e173]: 技术笔记
+              - generic [ref=e174]: 2026-04-22
+        - generic [ref=e175] [cursor=pointer]:
+          - generic [ref=e178]: 游戏
+          - generic [ref=e179]:
+            - heading "游戏网络同步技术详解" [level=3] [ref=e180]
+            - paragraph [ref=e181]: 从 UDP/TCP 到帧同步与状态同步的全面对比，深入理解多人游戏网络同步技术。
+            - generic [ref=e182]:
+              - generic [ref=e183]:
+                - generic [ref=e184]: 游戏开发
+                - generic [ref=e185]: 网络同步
+                - generic [ref=e186]: 技术笔记
+              - generic [ref=e187]: 2026-04-18
+        - generic [ref=e188] [cursor=pointer]:
+          - generic [ref=e191]: 游戏
+          - generic [ref=e192]:
+            - heading "游戏性能优化实战技巧" [level=3] [ref=e193]
+            - paragraph [ref=e194]: CPU/GPU 优化、带宽计算、Checklist 和 Tricks，来自行业大咖的性能优化经验。
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]: 性能优化
+                - generic [ref=e198]: 游戏开发
+                - generic [ref=e199]: 教程
+              - generic [ref=e200]: 2026-04-15
+  - contentinfo [ref=e201]:
+    - paragraph [ref=e202]: © 2025 Mcdull. 保留所有权利
