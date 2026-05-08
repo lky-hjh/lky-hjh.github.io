@@ -5,12 +5,17 @@
       "title": "秘密战争",
       "subtitle": "中国风下棋游戏",
       "folder": "project6",
-      "description": "秘密战争是一款国风 3D 网格战棋游戏，基于 UE5 蓝图开发。负责全部游戏客户端开发，包括核心玩法、网格逻辑、数据驱动 UI 和多人网络同步。",
+      "description": "秘密战争是一款国风 3D 网格战棋游戏，将传统棋类游戏与现代策略元素相结合，展现独特的中国美学风格。",
       "features": [
         "基于蓝图的 3D 棋盘网格系统",
         "回合制状态机与阵营交替控制",
-        "数据驱动 UI 系统",
-        "Client-Server 联机对战"
+        "Client-Server 架构联机对战",
+        "Data Table 驱动的高复用 UI 系统"
+      ],
+      "responsibilities": [
+        "核心玩法与网格逻辑：基于蓝图搭建 3D 棋盘网格与回合制状态机，精确控制阵营交替与输入状态。独立实现多类棋子（车、马、炮变体）的移动算法，解决并发移动与边界判定等逻辑冲突",
+        "数据驱动 UI：结合 Data Table 与高复用子控件，实现棋盘界面的动态批量生成，优化项目结构。开发动态 Tooltip 提示系统，处理复杂嵌套 UI 的自动换行与布局问题",
+        "多人网络同步：基于 Client-Server 架构实现联机对战。运用 RPC 与 RepNotify 处理棋子的动态生成、状态同步及所有权判定，确保多端表现一致"
       ],
       "videos": []
     },
@@ -19,11 +24,20 @@
       "title": "落鼎",
       "subtitle": "一款中国风的水墨 RTS 游戏",
       "folder": "project1",
-      "description": "国风 RTS 策略游戏，负责 60% 核心程序功能开发。",
+      "description": "落鼎是一款以中国传统文化为背景的即时战略游戏。游戏采用水墨画风格，将传统艺术与现代游戏玩法完美结合。",
       "features": [
+        "UE5 引擎开发",
+        "水墨渲染系统",
         "FlowField + A* 寻路系统",
         "ECS 架构优化大规模单位",
-        "抽卡、资源系统"
+        "抽卡、资源系统",
+        "建设系统：网格矩阵记录信息"
+      ],
+      "responsibilities": [
+        "游戏抽卡系统：实现可自定义权重的概率性抽卡",
+        "AI 寻路系统：通过 FlowField 寻路算法实现大规模单位的寻路逻辑，通过 A* 寻路算法实现玩家调度军队单位的逻辑。通过 ECS（UE 中的 MassEntity）和对象池等编程模式优化大规模单位逻辑",
+        "资源系统：实现资源消耗与采集系统",
+        "建设系统：通过网格矩阵记录信息，实现网格、建筑信息的读写"
       ],
       "videos": [
         {
@@ -35,39 +49,78 @@
     {
       "id": "xihu",
       "title": "西湖龙井茶",
-      "subtitle": "中国风游戏场景",
+      "subtitle": "茶叶品牌设计",
       "folder": "project2",
-      "description": "中国风游戏场景设计与制作。",
-      "features": [],
+      "description": "为西湖龙井茶品牌进行整体视觉设计，包括品牌标识、包装设计、宣传物料等，突出茶叶的品质和中国传统文化特色。",
+      "features": [
+        "品牌标识设计",
+        "茶叶包装设计",
+        "宣传海报设计",
+        "品牌视觉规范"
+      ],
       "videos": []
     },
     {
       "id": "unity-game",
-      "title": "Unity 游戏",
-      "subtitle": "沙漠场景",
+      "title": "Unity 简单游戏制作",
+      "subtitle": "游戏开发练习项目集",
       "folder": "project3",
-      "description": "使用 Unity 开发的沙漠场景游戏项目。",
-      "features": [],
+      "description": "使用 Unity 引擎开发的三个不同类型的游戏项目，包括 2D 平台跳跃游戏、3D 近战游戏和 FPS 游戏，涵盖了不同游戏类型的开发技术。",
+      "features": [
+        "2D 平台跳跃游戏：基础移动和跳跃机制、关卡设计和障碍物、收集系统和计分",
+        "3D 近战游戏：角色动画系统、战斗机制实现、敌人 AI 行为",
+        "FPS 游戏：第一人称视角控制、武器系统设计、射击和伤害机制",
+        "Unity 2D/3D 游戏开发、物理系统应用、动画状态机、AI 行为树、UI 系统设计"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project3/projects3_viedio1.mp4"
+        },
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project3/projects3_viedio2.mp4"
+        },
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project3/projects3_viedio3.mp4"
+        }
+      ]
+    },
+    {
+      "id": "desert-scene",
+      "title": "沙漠场景",
+      "subtitle": "使用 UE5 制作的沙漠环境",
+      "folder": "project3",
+      "description": "使用 UE5 引擎制作的沙漠环境场景。",
+      "features": [
+        "UE5 引擎",
+        "粒子系统",
+        "光照系统",
+        "地形系统",
+        "植被系统",
+        "水体系统",
+        "天气系统"
+      ],
       "videos": []
     },
     {
       "id": "forest-house",
       "title": "林中小屋",
-      "subtitle": "场景设计",
+      "subtitle": "使用 UE5 制作的场景",
       "folder": "project4",
-      "description": "林中小屋场景设计与渲染。",
-      "features": [],
-      "videos": []
-    },
-    {
-      "id": "gamejam2025-removed",
-      "title": "GameJam2025",
-      "subtitle": "游戏开发马拉松",
-      "folder": "project6",
-      "description": "参与 GameJam2025 游戏开发马拉松。",
-      "features": [],
-      "videos": [],
-      "_removed": true
+      "description": "使用 UE5 制作的林中小屋场景，包含随机地形、Nanite 植被和水体系统。",
+      "features": [
+        "随机生成地形",
+        "Nanite 植被",
+        "水体系统"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/project4/cabinInWoods.mp4"
+        }
+      ]
     }
   ],
   "practices": [
@@ -76,55 +129,115 @@
       "title": "子弹冲击",
       "subtitle": "使用 Blender 制作的动画",
       "folder": "practice1",
-      "description": "使用 Blender 制作的子弹冲击动画效果。",
-      "videos": []
+      "description": "使用 Blender 制作的子弹冲击动画，展示了粒子特效和动画效果。",
+      "features": [
+        "Blender 动画制作",
+        "粒子系统",
+        "特效动画"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice1/bulletImpact.mp4"
+        }
+      ]
     },
     {
       "id": "practice2",
-      "title": "练习2",
-      "subtitle": "",
+      "title": "猴头构建",
+      "subtitle": "几何节点",
       "folder": "practice2",
-      "description": "",
-      "videos": []
+      "description": "使用 Blender 几何节点制作的猴子头像，展示了程序化建模技术。",
+      "features": [
+        "Blender 几何节点",
+        "程序化建模",
+        "点云分布"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice2/monkeyHead.mp4"
+        }
+      ]
     },
     {
       "id": "practice3",
-      "title": "练习3",
-      "subtitle": "",
+      "title": "积木动画",
+      "subtitle": "3D 建模作品",
       "folder": "practice3",
-      "description": "",
-      "videos": []
+      "description": "使用 Blender 制作的积木动画，展示了 3D 建模和动画技术。",
+      "features": [
+        "Blender 3D 建模",
+        "材质贴图",
+        "动画制作"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice3/bricksAnimation.mp4"
+        }
+      ]
     },
     {
       "id": "practice4",
-      "title": "练习4",
-      "subtitle": "",
+      "title": "小汽车",
+      "subtitle": "布线优化",
       "folder": "practice4",
-      "description": "",
-      "videos": []
+      "description": "使用 Blender 制作的小汽车动画，重点优化了模型布线和动画流畅度。",
+      "features": [
+        "Blender 建模",
+        "布线优化",
+        "动画制作"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice4/littleCar.mp4"
+        }
+      ]
     },
     {
       "id": "practice5",
-      "title": "练习5",
-      "subtitle": "",
+      "title": "行走机器人",
+      "subtitle": "骨骼动画",
       "folder": "practice5",
-      "description": "",
-      "videos": []
+      "description": "使用 Blender 制作的机器人行走动画，展示了骨骼绑定和动画技术。",
+      "features": [
+        "Blender 骨骼绑定",
+        "行走动画",
+        "角色动画"
+      ],
+      "videos": [
+        {
+          "type": "mp4",
+          "src": "https://lky-hjh.oss-cn-guangzhou.aliyuncs.com/works/practice5/robotWalk.mp4"
+        }
+      ]
     },
     {
       "id": "practice6",
-      "title": "练习6",
-      "subtitle": "",
+      "title": "金币基站",
+      "subtitle": "硬表面建模练习",
       "folder": "practice6",
-      "description": "",
+      "description": "使用 Blender 制作的金币基站模型，展示了硬表面建模技术。",
+      "features": [
+        "Blender 硬表面建模",
+        "材质贴图",
+        "灯光渲染"
+      ],
       "videos": []
     },
     {
       "id": "practice7",
-      "title": "练习7",
-      "subtitle": "",
+      "title": "荧光树桩",
+      "subtitle": "UI 动效",
       "folder": "practice7",
-      "description": "",
+      "description": "使用 Blender 制作的荧光树桩模型，展示了雕刻和材质技术。",
+      "features": [
+        "Blender 雕刻",
+        "发光材质",
+        "自然场景建模"
+      ],
       "videos": []
     }
   ]

@@ -35,28 +35,51 @@
 
       <!-- 项目详情模态框 -->
       <ProjectDetail v-model:visible="showDetail">
-        <h2 class="detail-title">{{ selectedProject?.title }}</h2>
-        <p class="detail-subtitle">{{ selectedProject?.subtitle }}</p>
+        <div v-if="selectedProject" class="detail-body">
+          <h2 class="detail-title">{{ selectedProject.title }}</h2>
+          <p class="detail-subtitle">{{ selectedProject.subtitle }}</p>
 
-        <ImageGallery
-          :main="mainImage"
-          :thumbnails="thumbnailImages"
-        />
+          <!-- 图片画廊 -->
+          <ImageGallery
+            :main="mainImage"
+            :thumbnails="thumbnailImages"
+          />
 
-        <VideoPlayer
-          v-for="video in selectedProject?.videos"
-          :key="video.bvid"
-          :type="video.type"
-          :bvid="video.bvid"
-        />
+          <!-- 视频列表 -->
+          <div v-if="selectedProject.videos && selectedProject.videos.length > 0">
+            <VideoPlayer
+              v-for="(video, idx) in selectedProject.videos"
+              :key="idx"
+              :type="video.type"
+              :bvid="video.bvid"
+              :src="video.src"
+            />
+          </div>
 
-        <p class="detail-description">{{ selectedProject?.description }}</p>
+          <!-- 项目介绍 -->
+          <div v-if="selectedProject.description" class="detail-section">
+            <h3>项目介绍</h3>
+            <p>{{ selectedProject.description }}</p>
+          </div>
 
-        <ul v-if="selectedProject?.features?.length" class="detail-features">
-          <li v-for="feature in selectedProject.features" :key="feature">
-            {{ feature }}
-          </li>
-        </ul>
+          <!-- 技术特点 -->
+          <div v-if="selectedProject.features && selectedProject.features.length > 0">
+            <h3>技术特点</h3>
+            <ul class="detail-list">
+              <li v-for="feat in selectedProject.features" :key="feat">{{ feat }}</li>
+            </ul>
+          </div>
+
+          <!-- 职责说明 -->
+          <div
+            v-if="selectedProject.responsibilities && selectedProject.responsibilities.length > 0"
+          >
+            <h3>我的职责</h3>
+            <ul class="detail-list">
+              <li v-for="(resp, idx) in selectedProject.responsibilities" :key="idx">{{ resp }}</li>
+            </ul>
+          </div>
+        </div>
       </ProjectDetail>
     </div>
   </DefaultLayout>
@@ -71,8 +94,8 @@ import ImageGallery from '@/components/works/ImageGallery.vue'
 import VideoPlayer from '@/components/common/VideoPlayer.vue'
 import projectData from '@/data/projects.json'
 
-const projects = projectData.projects.filter(p => !p._removed)
-const practices = projectData.practices.filter(p => !p._removed)
+const projects = projectData.projects
+const practices = projectData.practices
 
 const showDetail = ref(false)
 const selectedProject = ref(null)
@@ -85,11 +108,11 @@ const mainImage = computed(() => {
 const thumbnailImages = computed(() => {
   if (!selectedProject.value) return []
   const folder = selectedProject.value.folder
-  return [
-    `./works/${folder}/thumb1.png`,
-    `./works/${folder}/thumb2.png`,
-    `./works/${folder}/thumb3.png`
-  ].filter(Boolean)
+  const thumbs = []
+  for (let i = 1; i <= 3; i++) {
+    thumbs.push(`./works/${folder}/thumb${i}.png`)
+  }
+  return thumbs
 })
 
 const openDetail = (project) => {
@@ -132,29 +155,57 @@ const openDetail = (project) => {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
+/* 详情样式 */
+.detail-body {
+  padding: 0;
+}
+
 .detail-title {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .detail-subtitle {
   color: #666;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
-.detail-description {
+.detail-section {
+  margin-top: 1.5rem;
+}
+
+.detail-section h3,
+.detail-body h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.detail-body p {
   line-height: 1.8;
   color: #555;
 }
 
-.detail-features {
-  margin-top: 1.5rem;
+.detail-list {
   padding-left: 1.5rem;
 }
 
-.detail-features li {
+.detail-list li {
   margin-bottom: 0.5rem;
   line-height: 1.8;
+  color: #555;
+}
+
+.resp-item {
+  margin-bottom: 1rem;
+}
+
+.resp-item p {
+  line-height: 1.8;
+  color: #555;
 }
 
 @media (max-width: 768px) {
